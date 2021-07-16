@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_round_corners_purple"
+    android:padding="10dp"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/rv_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Titulo da tarefa"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/rv_item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rv_item_title"
+        app:layout_constraintStart_toStartOf="@id/rv_item_title"
+        android:text="Description of text Description of text Description of textDescription of textDescription of textDescription of textDescription of text"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/rv_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rv_item_description"
+        app:layout_constraintStart_toStartOf="@id/rv_item_title"
+        android:text="00/00/0000  hh/mm"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_more_options"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_more_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
